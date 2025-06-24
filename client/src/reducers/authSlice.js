@@ -7,7 +7,7 @@ const getUserDetails = () => {
 const initialState = {
     currentUser: getUserDetails(),
 }
-
+// Later
 const authSlice = createSlice({
     name: "auth",
     initialState,
