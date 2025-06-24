@@ -34,5 +34,3 @@ Visit `http://localhost:5173` to use the app.
 
 - `client/` – React application
 - `server/` – Express API and Socket.io server
-
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
