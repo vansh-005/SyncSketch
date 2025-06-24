@@ -21,7 +21,7 @@ test('renders Login component correctly', () => {
     expect(logo).toBeInTheDocument();
 
     // check for the form heading
-    const formHeading = screen.getByText(/Login to collabordraw/i);
+    const formHeading = screen.getByText(/Login to SyncSketch/i);
     expect(formHeading).toBeInTheDocument();
 
     // check for email input

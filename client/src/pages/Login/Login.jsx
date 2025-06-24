@@ -40,7 +40,7 @@ const Login = () => {
                 <div className="form-head">
                     <Logo />
                     <div className="form-heading">
-                        Login to collabordraw
+                        Login to SyncSketch
                     </div>
                 </div>
                 <input type="email" placeholder="Enter your email id" name="email" onChange={handleChange}></input>
