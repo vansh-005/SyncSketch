@@ -40,7 +40,7 @@ const Signup = () => {
                 <div className="form-head">
                     <Logo />
                     <div className="form-heading">
-                        Signup to collabordraw
+                        Signup to SyncSketch
                     </div>
                 </div>
                 <input type="text" placeholder="Enter your first name" name="firstName" onChange={handleChange}></input>

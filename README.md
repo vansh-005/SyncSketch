@@ -1,11 +1,37 @@
-# CollabOrDraw
+# SyncSketch
 
-A collaborative whiteboard application built using MERN stack in which you can create rooms and collab with your friends to work on the whiteboard. The goal of this project is to demonstrate my skills of building full-stack collaborative application using Socket.io and MERN technologies.
+SyncSketch is a real-time collaborative whiteboard built with the MERN stack and Socket.io. It allows users to create drawing rooms and sketch together with live updates.
 
-## Tech Stack Used
+## Tech Stack
 
-1. Frontend - Reactjs
-2. Backend - Express.js, Nodejs
-3. Database - MongoDB
-4. Collaborative Feature - Socket.io
+- **Frontend:** React with Vite
+- **Backend:** Express.js with Node.js
+- **Database:** MongoDB
+- **Realtime:** Socket.io
 
+## Getting Started
+
+Install dependencies for both the client and server:
+
+```bash
+npm run install-server
+npm run install-client
+```
+
+### Running the application
+
+In separate terminals run:
+
+```bash
+npm run start-server   # backend on port 4000 by default
+npm run start-client   # React dev server
+```
+
+Visit `http://localhost:5173` to use the app.
+
+## Project Structure
+
+- `client/` – React application
+- `server/` – Express API and Socket.io server
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

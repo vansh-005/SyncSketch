@@ -1,4 +1,4 @@
-# Contributing to CollabOrDraw
+# Contributing to SyncSketch
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-yellow.svg?style=flat-square)](http://makeapullrequest.com)
 &nbsp;
@@ -17,7 +17,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 
 ## Table of Contents
 
-- [Contributing to CollabOrDraw](#contributing-to-collabordraw)
+- [Contributing to SyncSketch](#contributing-to-syncsketch)
   - [Table of Contents](#table-of-contents)
   - [Code of Conduct](#code-of-conduct)
   - [I Have a Question](#i-have-a-question)
@@ -45,7 +45,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[CollabOrDraw Code of Conduct](blob/master/CODE_OF_CONDUCT.md).
+[SyncSketch Code of Conduct](blob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to <avidubey712@gmail.com>.
 
