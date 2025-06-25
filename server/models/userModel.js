@@ -56,28 +56,39 @@ userSchema.methods.comparePassword = async function (candidatePassword) {
 
 // custom method to generate access token
 userSchema.methods.generateAccessToken = function () {
-    return jwt.sign(
-        {
-            _id: this._id,
-        },
-        process.env.ACCESS_TOKEN_SECRET,
-        {
-            expiresIn: process.env.ACCESS_TOKEN_EXPIRY
-        }
-    )
+    try{
+        return jwt.sign(
+            {
+                _id: this._id,
+            },
+            process.env.ACCESS_TOKEN_SECRET,
+            {
+                expiresIn: process.env.ACCESS_TOKEN_EXPIRY
+            }
+        )
+    }
+    catch (error) {
+        res.status(500).json({ error: "Something went wrong while generating access tokens" });
+    }
+
 }
 
 // custom method to generate refresh token
 userSchema.methods.generateRefreshToken = function () {
-    return jwt.sign(
-        {
-            _id: this._id,
-        },
-        process.env.REFRESH_TOKEN_SECRET,
-        {
-            expiresIn: process.env.REFRESH_TOKEN_EXPIRY
-        }
-    )
+    try{    
+        return jwt.sign(
+            {
+                _id: this._id,
+            },
+            process.env.REFRESH_TOKEN_SECRET,
+            {
+                expiresIn: process.env.REFRESH_TOKEN_EXPIRY
+            }
+        )
+    }
+    catch (error) {
+        res.status(500).json({ error: "Something went wrong while generating access tokens" });
+    }
 }
 
 export const User = mongoose.model('User', userSchema);
