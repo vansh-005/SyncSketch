@@ -54,7 +54,20 @@ io.on('connection', (socket) => {
         socket.join(roomName);
     })
 
+    socket.on('joinRoom', ({ roomName }) => {
+        console.log(`${socket.id} joined room : ${roomName}`)
+        socket.join(roomName)
+        const members = Array.from(io.sockets.adapter.rooms.get(roomName) || [])
+        socket.emit('roomUsers', members)
+        socket.to(roomName).emit('userJoined', { userId: socket.id })
+    })
+
     socket.on('disconnect', (reason) => {
+        socket.rooms.forEach(room => {
+            if (room !== socket.id) {
+                socket.to(room).emit('userLeft', { userId: socket.id })
+            }
+        })
         connections = connections.filter((con) => con.id !== socket.id);
     })
 })
